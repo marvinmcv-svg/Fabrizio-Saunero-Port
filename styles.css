@@ -98,6 +98,48 @@ main,
   padding: 0 1rem;
 }
 
+/* ---------- Language switch ---------- */
+
+.lang-switch {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1rem 0;
+}
+
+.lang-btn {
+  padding: 0.35rem 0.75rem;
+  border: 2px solid var(--green);
+  border-radius: 3px;
+  background: transparent;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.lang-btn:hover,
+.lang-btn:focus-visible {
+  background: var(--rule);
+  color: var(--ink);
+}
+
+.lang-btn:focus-visible {
+  outline: 3px solid var(--green);
+  outline-offset: 3px;
+}
+
+.lang-btn[aria-pressed="true"] {
+  background: var(--green);
+  color: #ffffff;
+}
+
 /* ---------- Hero ---------- */
 
 .hero {

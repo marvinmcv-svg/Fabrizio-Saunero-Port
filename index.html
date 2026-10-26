@@ -12,209 +12,370 @@
 </head>
 <body>
 
+  <div class="lang-switch" role="group" aria-label="Language">
+    <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">ENG</button>
+    <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ESP</button>
+  </div>
+
   <header class="hero">
     <div class="hero-text">
-      <span class="tag">Portfolio</span>
+      <span class="tag" data-i18n="hero.tag">Portfolio</span>
       <h1 class="name">Fabrizio<br>Saunero</h1>
-      <p class="tagline">Built by Experience. Driven by Purpose.</p>
+      <p class="tagline" data-i18n="hero.tagline">Built by Experience. Driven by Purpose.</p>
 
       <blockquote class="pull-quote">
-        <p>“I think what matters most isn’t just grades or trophies—it’s what you actually do with your chances.”</p>
+        <p data-i18n="hero.quote">“I think what matters most isn’t just grades or trophies—it’s what you actually do with your chances.”</p>
       </blockquote>
 
-      <p>My life so far has been a mix of playing competitive sports, helping out in my community, and trying out real business projects. I believe you only grow when you’re willing to try new things, face tough challenges, and work hard even when you’re not sure how things will turn out.</p>
-      <p>I’m applying to college because I want to push myself, think bigger, and meet people who inspire me. I know what I can do, and I’m ready to see how much more I can achieve.</p>
+      <p data-i18n="hero.p1">My life so far has been a mix of playing competitive sports, helping out in my community, and trying out real business projects. I believe you only grow when you’re willing to try new things, face tough challenges, and work hard even when you’re not sure how things will turn out.</p>
+      <p data-i18n="hero.p2">I’m applying to college because I want to push myself, think bigger, and meet people who inspire me. I know what I can do, and I’m ready to see how much more I can achieve.</p>
     </div>
 
     <figure class="hero-figure">
-      <img src="assets/hero.jpg" alt="Fabrizio Saunero holding a silver trophy on a grass field in front of a mountain" width="494" height="658">
+      <img src="assets/hero.jpg" alt="Fabrizio Saunero holding a silver trophy on a grass field in front of a mountain" data-i18n-alt="hero.alt" width="494" height="658">
     </figure>
   </header>
 
   <main>
     <section class="pillar" id="athletics">
-      <p class="pillar-number">01 · Athletics &amp; Leadership</p>
-      <h2>Earn Your Progress. Lead by Example.</h2>
-      <p class="lead">Talent gets you started, but you have to work hard to actually get anywhere. Soccer has been a huge part of my life, and nothing was ever handed to me.</p>
+      <p class="pillar-number" data-i18n="ath.label">01 · Athletics &amp; Leadership</p>
+      <h2 data-i18n="ath.title">Earn Your Progress. Lead by Example.</h2>
+      <p class="lead" data-i18n="ath.lead">Talent gets you started, but you have to work hard to actually get anywhere. Soccer has been a huge part of my life, and nothing was ever handed to me.</p>
       <ul>
-        <li><strong>On the Field:</strong> I worked my way up from the 4th Division to Primera A (Bolivia’s 2nd Division). I won two U17 state championships, one U19 title, and two Friendship Games championships with my school team.</li>
-        <li><strong>Leadership:</strong> Being varsity captain taught me that leadership isn’t about shouting. It’s about being someone your team can rely on, setting a good example, and owning your mistakes.</li>
-        <li><strong>Other Sports:</strong> Playing golf and basketball taught me to stay composed under pressure, adapt when things don’t go as planned, and focus on my next move instead of dwelling on my last mistake.</li>
+        <li data-i18n="ath.li1"><strong>On the Field:</strong> I worked my way up from the 4th Division to Primera A (Bolivia’s 2nd Division). I won two U17 state championships, one U19 title, and two Friendship Games championships with my school team.</li>
+        <li data-i18n="ath.li2"><strong>Leadership:</strong> Being varsity captain taught me that leadership isn’t about shouting. It’s about being someone your team can rely on, setting a good example, and owning your mistakes.</li>
+        <li data-i18n="ath.li3"><strong>Other Sports:</strong> Playing golf and basketball taught me to stay composed under pressure, adapt when things don’t go as planned, and focus on my next move instead of dwelling on my last mistake.</li>
       </ul>
-      <a class="button" href="#resume-athletics">Explore My Athletic Journey</a>
+      <a class="button" href="#resume-athletics" data-i18n="ath.button">Explore My Athletic Journey</a>
     </section>
 
     <section class="pillar" id="service">
-      <p class="pillar-number">02 · Service &amp; Community</p>
-      <h2>Recognize a Need. Take Initiative.</h2>
-      <p class="lead">If you get good opportunities, the best thing you can do is use them to help someone else. I try to make sure my volunteer time actually makes a difference.</p>
+      <p class="pillar-number" data-i18n="svc.label">02 · Service &amp; Community</p>
+      <h2 data-i18n="svc.title">Recognize a Need. Take Initiative.</h2>
+      <p class="lead" data-i18n="svc.lead">If you get good opportunities, the best thing you can do is use them to help someone else. I try to make sure my volunteer time actually makes a difference.</p>
       <ul>
-        <li><strong>Teaching &amp; Coaching:</strong> I taught basic English to local golf caddies so they could speak better with visitors. I also coached sports for 10 kids and taught older adults how to use smartphones to stay in touch with family.</li>
-        <li><strong>Fundraising:</strong> Through Operation Smile, I helped raise over $7,000 with the Kilómetros por Sonrisas 5K, which paid for surgeries for 15 kids.</li>
-        <li><strong>Giving Back:</strong> I volunteered with the Special Olympics and helped out with family events for A Day in the Park.</li>
+        <li data-i18n="svc.li1"><strong>Teaching &amp; Coaching:</strong> I taught basic English to local golf caddies so they could speak better with visitors. I also coached sports for 10 kids and taught older adults how to use smartphones to stay in touch with family.</li>
+        <li data-i18n="svc.li2"><strong>Fundraising:</strong> Through Operation Smile, I helped raise over $7,000 with the Kilómetros por Sonrisas 5K, which paid for surgeries for 15 kids.</li>
+        <li data-i18n="svc.li3"><strong>Giving Back:</strong> I volunteered with the Special Olympics and helped out with family events for A Day in the Park.</li>
       </ul>
-      <a class="button" href="#resume-service">Explore My Community Impact</a>
+      <a class="button" href="#resume-service" data-i18n="svc.button">Explore My Community Impact</a>
     </section>
 
     <section class="pillar" id="work">
-      <p class="pillar-number">03 · Entrepreneurship &amp; Work</p>
-      <h2>Solve Problems. Turn Ideas into Action.</h2>
-      <p class="lead">Some of my favorite lessons didn’t happen in a classroom. They happened when I had actual responsibilities and my choices mattered.</p>
+      <p class="pillar-number" data-i18n="work.label">03 · Entrepreneurship &amp; Work</p>
+      <h2 data-i18n="work.title">Solve Problems. Turn Ideas into Action.</h2>
+      <p class="lead" data-i18n="work.lead">Some of my favorite lessons didn’t happen in a classroom. They happened when I had actual responsibilities and my choices mattered.</p>
       <ul>
-        <li><strong>Hands-on Experience:</strong> Working in sales, customer service, and running a business project showed me how ideas turn into real products and how daily choices affect a business.</li>
-        <li><strong>Figuring Things Out:</strong> Real-world problems don’t come with an instruction manual. I learned to ask questions, switch up my plan, and solve problems on my own instead of waiting for directions.</li>
-        <li><strong>My Goal:</strong> I don’t just want to memorize stuff from a textbook. I want to actually understand it, use it, and make cool things happen.</li>
+        <li data-i18n="work.li1"><strong>Hands-on Experience:</strong> Working in sales, customer service, and running a business project showed me how ideas turn into real products and how daily choices affect a business.</li>
+        <li data-i18n="work.li2"><strong>Figuring Things Out:</strong> Real-world problems don’t come with an instruction manual. I learned to ask questions, switch up my plan, and solve problems on my own instead of waiting for directions.</li>
+        <li data-i18n="work.li3"><strong>My Goal:</strong> I don’t just want to memorize stuff from a textbook. I want to actually understand it, use it, and make cool things happen.</li>
       </ul>
-      <a class="button" href="#resume-work">Explore My Work Experience</a>
+      <a class="button" href="#resume-work" data-i18n="work.button">Explore My Work Experience</a>
     </section>
 
     <section class="pillar" id="independence">
-      <p class="pillar-number">04 · Independence &amp; Life Skills</p>
-      <h2>Take Ownership. Build Self-Reliance.</h2>
-      <p class="lead">Being independent is about knowing how to handle your business and fix things when something goes wrong.</p>
+      <p class="pillar-number" data-i18n="ind.label">04 · Independence &amp; Life Skills</p>
+      <h2 data-i18n="ind.title">Take Ownership. Build Self-Reliance.</h2>
+      <p class="lead" data-i18n="ind.lead">Being independent is about knowing how to handle your business and fix things when something goes wrong.</p>
       <ul>
-        <li><strong>Practical Skills:</strong> I’ve been teaching myself everyday skills like cooking, gardening, basic home repairs, and wiring.</li>
-        <li><strong>Problem-Solving:</strong> Doing basic chores teaches you how to troubleshoot, use what you have, and take care of yourself safely.</li>
-        <li><strong>Getting Ready:</strong> Picking up these habits is helping me get ready to live on my own, adapt to college, and pull my own weight.</li>
+        <li data-i18n="ind.li1"><strong>Practical Skills:</strong> I’ve been teaching myself everyday skills like cooking, gardening, basic home repairs, and wiring.</li>
+        <li data-i18n="ind.li2"><strong>Problem-Solving:</strong> Doing basic chores teaches you how to troubleshoot, use what you have, and take care of yourself safely.</li>
+        <li data-i18n="ind.li3"><strong>Getting Ready:</strong> Picking up these habits is helping me get ready to live on my own, adapt to college, and pull my own weight.</li>
       </ul>
-      <a class="button" href="#resume-skills">Explore My Path to Independence</a>
+      <a class="button" href="#resume-skills" data-i18n="ind.button">Explore My Path to Independence</a>
     </section>
 
     <section class="resume" id="resume">
-      <p class="pillar-number">Resume</p>
+      <p class="pillar-number" data-i18n="res.label">Resume</p>
       <h2>Fabrizio Saunero</h2>
       <p class="contact">Mallasilla, La Paz, Bolivia · fabrizio.saunero@acslp.org · +591 7778 4807</p>
-      <a class="button button-outline" href="assets/Fabrizio_Saunero_Resume.docx" download>Download Resume (.docx)</a>
+      <a class="button button-outline" href="assets/Fabrizio_Saunero_Resume.docx" download data-i18n="res.download">Download Resume (.docx)</a>
 
       <div class="resume-grid">
         <div class="resume-block" id="resume-education">
-          <h3>Education</h3>
-          <h4>American Cooperative School (ACS), La Paz, Bolivia <span>Aug 2023 – Jun 2027 (Expected)</span></h4>
+          <h3 data-i18n="edu.h3">Education</h3>
+          <h4 data-i18n="edu.h4a">American Cooperative School (ACS), La Paz, Bolivia <span>Aug 2023 – Jun 2027 (Expected)</span></h4>
           <ul>
-            <li>Diploma: U.S. and Bolivian High School Diploma</li>
-            <li>Cumulative Unweighted GPA: 2.90 | Award: American Citizenship Award</li>
-            <li>Coursework: AP Seminar, AP Research, AP World History, AP Microeconomics, AP Spanish Language, AP Spanish Literature</li>
+            <li data-i18n="edu.li1">Diploma: U.S. and Bolivian High School Diploma</li>
+            <li data-i18n="edu.li2">Cumulative Unweighted GPA: 2.90 | Award: American Citizenship Award</li>
+            <li data-i18n="edu.li3">Coursework: AP Seminar, AP Research, AP World History, AP Microeconomics, AP Spanish Language, AP Spanish Literature</li>
           </ul>
-          <h4>Forman School Summer Program, Connecticut, USA <span>Jul 2025</span></h4>
+          <h4 data-i18n="edu.h4b">Forman School Summer Program, Connecticut, USA <span>Jul 2025</span></h4>
           <ul>
-            <li>Completed a four-week academic program alongside students from diverse backgrounds, strengthening independence, communication, and cultural awareness while experiencing new teaching methods and American culture.</li>
+            <li data-i18n="edu.li4">Completed a four-week academic program alongside students from diverse backgrounds, strengthening independence, communication, and cultural awareness while experiencing new teaching methods and American culture.</li>
           </ul>
         </div>
 
         <div class="resume-block" id="resume-athletics">
-          <h3>Athletics &amp; Activities</h3>
-          <h4>Club de Tenis La Paz – Soccer | Starting Player <span>2017 – Present</span></h4>
+          <h3 data-i18n="act.h3">Athletics &amp; Activities</h3>
+          <h4 data-i18n="act.soccerH4">Club de Tenis La Paz – Soccer | Starting Player <span>2017 – Present</span></h4>
           <ul>
-            <li>Progressed through the youth divisions to the senior team, training about 25 hours per week; earned promotion from the 4th Division to Primera A (2nd Division).</li>
-            <li>Honors: 2× La Paz State Champion (U17); 1× La Paz State Champion (U19); promotion to Primera A</li>
+            <li data-i18n="act.soccerLi1">Progressed through the youth divisions to the senior team, training about 25 hours per week; earned promotion from the 4th Division to Primera A (2nd Division).</li>
+            <li data-i18n="act.soccerLi2">Honors: 2× La Paz State Champion (U17); 1× La Paz State Champion (U19); promotion to Primera A</li>
           </ul>
-          <h4>ACS Varsity Soccer | Team Captain <span>Aug 2023 – Present</span></h4>
+          <h4 data-i18n="act.varsityH4">ACS Varsity Soccer | Team Captain <span>Aug 2023 – Present</span></h4>
           <ul>
-            <li>Varsity starter since 9th grade and a key offensive and defensive contributor in local and international competitions.</li>
-            <li>Honors: 2× Friendship Games Champion; 1× Cougar Cup Champion; 2× Cougar Cup Runner-up; Copa Nissan Runner-up; UPB Tournament Runner-up</li>
+            <li data-i18n="act.varsityLi1">Varsity starter since 9th grade and a key offensive and defensive contributor in local and international competitions.</li>
+            <li data-i18n="act.varsityLi2">Honors: 2× Friendship Games Champion; 1× Cougar Cup Champion; 2× Cougar Cup Runner-up; Copa Nissan Runner-up; UPB Tournament Runner-up</li>
           </ul>
-          <h4>ACS Varsity Basketball | Player <span>Aug 2023 – Present</span></h4>
+          <h4 data-i18n="act.bbH4">ACS Varsity Basketball | Player <span>Aug 2023 – Present</span></h4>
           <ul>
-            <li>Regular rotation player and key defensive contributor in regional school tournaments.</li>
-            <li>Honors: 2× Cougar Cup Champion; Friendship Games Runner-up; Friendship Games Third Place</li>
+            <li data-i18n="act.bbLi1">Regular rotation player and key defensive contributor in regional school tournaments.</li>
+            <li data-i18n="act.bbLi2">Honors: 2× Cougar Cup Champion; Friendship Games Runner-up; Friendship Games Third Place</li>
           </ul>
-          <h4>Club de Tenis La Paz – Academy Basketball | U15 &amp; U17 <span>Aug 2023 – Present</span></h4>
+          <h4 data-i18n="act.academyH4">Club de Tenis La Paz – Academy Basketball | U15 &amp; U17 <span>Aug 2023 – Present</span></h4>
           <ul>
-            <li>Competed in the U15 and U17 divisions against strong regional competition, building teamwork, discipline, and versatility.</li>
+            <li data-i18n="act.academyLi1">Competed in the U15 and U17 divisions against strong regional competition, building teamwork, discipline, and versatility.</li>
           </ul>
-          <h4>Club de Golf La Paz | Team Member <span>Aug 2023 – Present</span></h4>
+          <h4 data-i18n="act.golfH4">Club de Golf La Paz | Team Member <span>Aug 2023 – Present</span></h4>
           <ul>
-            <li>Competed in junior golf tournaments; Honors: Club Tournament Champion (9th grade).</li>
+            <li data-i18n="act.golfLi1">Competed in junior golf tournaments; Honors: Club Tournament Champion (9th grade).</li>
           </ul>
-          <h4>UPSL Soccer Competition | Team Member <span>Jun 2026 – Present</span></h4>
+          <h4 data-i18n="act.upslH4">UPSL Soccer Competition | Team Member <span>Jun 2026 – Present</span></h4>
           <ul>
-            <li>Compete in UPSL leagues against high-level opponents, gaining international experience and adaptability.</li>
+            <li data-i18n="act.upslLi1">Compete in UPSL leagues against high-level opponents, gaining international experience and adaptability.</li>
           </ul>
-          <h4>Team Tequilas, Club de Tenis La Paz | Team Captain <span>Sep 2024 – Present</span></h4>
+          <h4 data-i18n="act.tequilasH4">Team Tequilas, Club de Tenis La Paz | Team Captain <span>Sep 2024 – Present</span></h4>
           <ul>
-            <li>Captain of a multi-age soccer team; won 1st place after advancing through multiple rounds of competition.</li>
+            <li data-i18n="act.tequilasLi1">Captain of a multi-age soccer team; won 1st place after advancing through multiple rounds of competition.</li>
           </ul>
         </div>
 
         <div class="resume-block" id="resume-service">
-          <h3>Leadership &amp; Community Service</h3>
-          <h4>English Classes for Golf Teachers | Founder <span>Jul 2025 – Present</span></h4>
+          <h3 data-i18n="svcb.h3">Leadership &amp; Community Service</h3>
+          <h4 data-i18n="svcb.englishH4">English Classes for Golf Teachers | Founder <span>Jul 2025 – Present</span></h4>
           <ul>
-            <li>Founded and teach a basic English program that helps golf instructors communicate with international club members.</li>
+            <li data-i18n="svcb.englishLi1">Founded and teach a basic English program that helps golf instructors communicate with international club members.</li>
           </ul>
-          <h4>Operation Smile | Member &amp; Volunteer <span>2024 – Present</span></h4>
+          <h4 data-i18n="svcb.osH4">Operation Smile | Member &amp; Volunteer <span>2024 – Present</span></h4>
           <ul>
-            <li>Fundraise for children receiving cleft lip and palate surgeries; supported charity races, ticket sales, and the 5K “Kilómetros por Sonrisas,” which raised up to $7,000 for 15 children.</li>
+            <li data-i18n="svcb.osLi1">Fundraise for children receiving cleft lip and palate surgeries; supported charity races, ticket sales, and the 5K “Kilómetros por Sonrisas,” which raised up to $7,000 for 15 children.</li>
           </ul>
-          <h4>A Day in the Park | Volunteer <span>2024 – Present</span></h4>
+          <h4 data-i18n="svcb.adipH4">A Day in the Park | Volunteer <span>2024 – Present</span></h4>
           <ul>
-            <li>Join monthly gatherings that provide quality time and support to children and families affected by poverty, neglect, and substance abuse.</li>
+            <li data-i18n="svcb.adipLi1">Join monthly gatherings that provide quality time and support to children and families affected by poverty, neglect, and substance abuse.</li>
           </ul>
-          <h4>Special Olympics | Volunteer <span>Oct 2026</span></h4>
+          <h4 data-i18n="svcb.soH4">Special Olympics | Volunteer <span>Oct 2026</span></h4>
           <ul>
-            <li>Participated in volunteer activities supporting Special Olympics athletes.</li>
+            <li data-i18n="svcb.soLi1">Participated in volunteer activities supporting Special Olympics athletes.</li>
           </ul>
-          <h4>Youth Sports Coach | Community Volunteer <span>Apr 2025</span></h4>
+          <h4 data-i18n="svcb.coachH4">Youth Sports Coach | Community Volunteer <span>Apr 2025</span></h4>
           <ul>
-            <li>Coached about 10 young children in soccer, basketball, and other sports, emphasizing teamwork, discipline, sportsmanship, confidence, and healthy lifestyles.</li>
+            <li data-i18n="svcb.coachLi1">Coached about 10 young children in soccer, basketball, and other sports, emphasizing teamwork, discipline, sportsmanship, confidence, and healthy lifestyles.</li>
           </ul>
-          <h4>Digital Literacy Instructor | Community Volunteer <span>Mar 2025</span></h4>
+          <h4 data-i18n="svcb.digitalH4">Digital Literacy Instructor | Community Volunteer <span>Mar 2025</span></h4>
           <ul>
-            <li>Taught older adults to use computers, smartphones, email, and social media, including internet safety and online communication.</li>
+            <li data-i18n="svcb.digitalLi1">Taught older adults to use computers, smartphones, email, and social media, including internet safety and online communication.</li>
           </ul>
         </div>
 
         <div class="resume-block" id="resume-work">
-          <h3>Work Experience</h3>
-          <h4>Family Juice Business | Assistant <span>Jan 2026 – Present</span></h4>
+          <h3 data-i18n="wk.h3">Work Experience</h3>
+          <h4 data-i18n="wk.juiceH4">Family Juice Business | Assistant <span>Jan 2026 – Present</span></h4>
           <ul>
-            <li>Work alongside my father producing fresh lemon juices and bottled beverages: preparing ingredients, sanitizing equipment, bottling, labeling, managing inventory, packaging orders, and assisting customers.</li>
-            <li>Helped introduce a special plant from another country used in the lemonades.</li>
+            <li data-i18n="wk.juiceLi1">Work alongside my father producing fresh lemon juices and bottled beverages: preparing ingredients, sanitizing equipment, bottling, labeling, managing inventory, packaging orders, and assisting customers.</li>
+            <li data-i18n="wk.juiceLi2">Helped introduce a special plant from another country used in the lemonades.</li>
           </ul>
-          <h4>Super Salteñas | Shop Employee <span>Dec 2024 – Present</span></h4>
+          <h4 data-i18n="wk.salteH4">Super Salteñas | Shop Employee <span>Dec 2024 – Present</span></h4>
           <ul>
-            <li>Serve 30+ customers daily: take orders, handle cash and electronic payments, support food preparation, restock inventory, and resolve customer concerns professionally.</li>
+            <li data-i18n="wk.salteLi1">Serve 30+ customers daily: take orders, handle cash and electronic payments, support food preparation, restock inventory, and resolve customer concerns professionally.</li>
           </ul>
-          <h4>Compañía Cervecera Boliviana | Brewery Production Worker <span>Sep 2025 – Dec 2025</span></h4>
+          <h4 data-i18n="wk.cerveH4">Compañía Cervecera Boliviana | Brewery Production Worker <span>Sep 2025 – Dec 2025</span></h4>
           <ul>
-            <li>Supported daily production and packaging in a fast-paced facility, including beverage preparation, bottling, labeling, quality control, and safety procedures; contributed to thousands of units produced to strict quality standards.</li>
+            <li data-i18n="wk.cerveLi1">Supported daily production and packaging in a fast-paced facility, including beverage preparation, bottling, labeling, quality control, and safety procedures; contributed to thousands of units produced to strict quality standards.</li>
           </ul>
-          <h4>Beverage Production &amp; Sales | Production &amp; Sales Assistant <span>Sep 2025 – Dec 2025</span></h4>
+          <h4 data-i18n="wk.bevH4">Beverage Production &amp; Sales | Production &amp; Sales Assistant <span>Sep 2025 – Dec 2025</span></h4>
           <ul>
-            <li>Prepared beverages for commercial distribution, promoted products to customers, maintained displays, and answered questions, building sales, communication, and leadership skills.</li>
+            <li data-i18n="wk.bevLi1">Prepared beverages for commercial distribution, promoted products to customers, maintained displays, and answered questions, building sales, communication, and leadership skills.</li>
           </ul>
-          <h4>Textilon | Intern <span>Jun 2025</span></h4>
+          <h4 data-i18n="wk.textH4">Textilon | Intern <span>Jun 2025</span></h4>
           <ul>
-            <li>Completed an internship at one of the largest textile companies in La Paz, assisting with inventory, administrative tasks, logistics, distribution, and customer service while learning workplace professionalism and teamwork.</li>
+            <li data-i18n="wk.textLi1">Completed an internship at one of the largest textile companies in La Paz, assisting with inventory, administrative tasks, logistics, distribution, and customer service while learning workplace professionalism and teamwork.</li>
           </ul>
-          <h4>School Entrepreneurship Project – Cookie Business | Co-Founder <span>Mar 2025 – May 2025</span></h4>
+          <h4 data-i18n="wk.cookieH4">School Entrepreneurship Project – Cookie Business | Co-Founder <span>Mar 2025 – May 2025</span></h4>
           <ul>
-            <li>Co-founded a student-run cookie business covering baking, packaging, marketing, pricing, sales, and customer service; tracked costs and revenue and generated a profit of more than Bs. 300.</li>
+            <li data-i18n="wk.cookieLi1">Co-founded a student-run cookie business covering baking, packaging, marketing, pricing, sales, and customer service; tracked costs and revenue and generated a profit of more than Bs. 300.</li>
           </ul>
         </div>
 
         <div class="resume-block" id="resume-skills">
-          <h3>Skills &amp; Languages</h3>
-          <h4>Languages</h4>
+          <h3 data-i18n="sk.h3">Skills &amp; Languages</h3>
+          <h4 data-i18n="sk.langH4">Languages</h4>
           <ul>
-            <li>Spanish (Fluent), English (Fluent), Italian (Basic)</li>
+            <li data-i18n="sk.langLi1">Spanish (Fluent), English (Fluent), Italian (Basic)</li>
           </ul>
-          <h4>Skills</h4>
+          <h4 data-i18n="sk.skillsH4">Skills</h4>
           <ul>
-            <li>Cooking and food safety, kitchen organization, basic electrical work and maintenance, mechanical repairs, gardening and landscaping, household maintenance, inventory management, customer service</li>
+            <li data-i18n="sk.skillsLi1">Cooking and food safety, kitchen organization, basic electrical work and maintenance, mechanical repairs, gardening and landscaping, household maintenance, inventory management, customer service</li>
           </ul>
         </div>
       </div>
     </section>
 
     <section class="closing">
-      <p class="pillar-number">Closing Statement</p>
-      <h2>Ready for What’s Next</h2>
-      <p class="lead">Everything I’ve done so far has taught me discipline, responsibility, and how to work with others.</p>
-      <p>I’m really excited for college. I can’t wait to take tough classes, join campus projects, and learn from people who see the world differently than I do. I know I still have a lot to learn and a lot to prove, but I’m ready to work hard and make this next chapter count.</p>
-      <p class="closing-line">The next chapter is mine to build.</p>
+      <p class="pillar-number" data-i18n="close.label">Closing Statement</p>
+      <h2 data-i18n="close.title">Ready for What’s Next</h2>
+      <p class="lead" data-i18n="close.lead">Everything I’ve done so far has taught me discipline, responsibility, and how to work with others.</p>
+      <p data-i18n="close.p">I’m really excited for college. I can’t wait to take tough classes, join campus projects, and learn from people who see the world differently than I do. I know I still have a lot to learn and a lot to prove, but I’m ready to work hard and make this next chapter count.</p>
+      <p class="closing-line" data-i18n="close.line">The next chapter is mine to build.</p>
     </section>
   </main>
+
+  <script>
+    (() => {
+      const copy = {
+        'meta.title': 'Fabrizio Saunero | Portafolio',
+        'meta.description': 'Portafolio de admisión universitaria de Fabrizio Saunero: atletismo y liderazgo, servicio y comunidad, emprendimiento y trabajo, e independencia.',
+        'hero.tag': 'Portafolio',
+        'hero.tagline': 'Construido con experiencia. Impulsado por un propósito.',
+        'hero.quote': '“Creo que lo que más importa no son solo las notas o los trofeos, sino lo que haces con tus oportunidades.”',
+        'hero.p1': 'Mi vida hasta ahora ha sido una mezcla de practicar deportes competitivos, ayudar a mi comunidad y probar proyectos de negocios reales. Creo que solo creces cuando estás dispuesto a intentar cosas nuevas, enfrentar retos difíciles y trabajar duro aunque no sepas cómo van a salir las cosas.',
+        'hero.p2': 'Estoy postulando a la universidad porque quiero superarme, pensar en grande y conocer a personas que me inspiren. Sé lo que puedo hacer y estoy listo para ver cuánto más puedo lograr.',
+        'hero.alt': 'Fabrizio Saunero sosteniendo un trofeo plateado en un campo de césped frente a una montaña',
+        'ath.label': '01 · Atletismo y liderazgo',
+        'ath.title': 'Gánate tu progreso. Lidera con el ejemplo.',
+        'ath.lead': 'El talento te da un comienzo, pero tienes que trabajar duro para llegar a algún lugar. El fútbol ha sido una parte enorme de mi vida, y nada me fue regalado.',
+        'ath.li1': '<strong>En la cancha:</strong> Subí desde la 4.ª División hasta Primera A (la 2.ª división de Bolivia). Gané dos campeonatos estatales U17, un título U19 y dos campeonatos de los Juegos de la Amistad con el equipo de mi colegio.',
+        'ath.li2': '<strong>Liderazgo:</strong> Ser capitán del equipo varsity me enseñó que liderar no es gritar. Es ser alguien en quien tu equipo puede confiar, dar buen ejemplo y asumir tus errores.',
+        'ath.li3': '<strong>Otros deportes:</strong> Jugar golf y básquetbol me enseñó a mantener la calma bajo presión, a adaptarme cuando las cosas no salen como planeé y a enfocarme en mi siguiente jugada en lugar de quedarme pensando en mi último error.',
+        'ath.button': 'Explora mi trayectoria deportiva',
+        'svc.label': '02 · Servicio y comunidad',
+        'svc.title': 'Reconoce una necesidad. Toma la iniciativa.',
+        'svc.lead': 'Si tienes buenas oportunidades, lo mejor que puedes hacer es usarlas para ayudar a alguien más. Procuro que mi tiempo como voluntario realmente marque una diferencia.',
+        'svc.li1': '<strong>Enseñanza y entrenamiento:</strong> Enseñé inglés básico a caddies de golf de la zona para que pudieran comunicarse mejor con los visitantes. También entrené deportes a 10 niños y enseñé a adultos mayores a usar el celular para mantenerse en contacto con su familia.',
+        'svc.li2': '<strong>Recaudación de fondos:</strong> A través de Operation Smile, ayudé a recaudar más de $7,000 con la carrera de 5K Kilómetros por Sonrisas, que pagó cirugías para 15 niños.',
+        'svc.li3': '<strong>Devolver lo recibido:</strong> Fui voluntario en Special Olympics y colaboré en los eventos familiares de A Day in the Park.',
+        'svc.button': 'Explora mi impacto en la comunidad',
+        'work.label': '03 · Emprendimiento y trabajo',
+        'work.title': 'Resuelve problemas. Convierte ideas en acción.',
+        'work.lead': 'Algunas de mis lecciones favoritas no ocurrieron en un salón de clases. Ocurrieron cuando tenía responsabilidades reales y mis decisiones importaban.',
+        'work.li1': '<strong>Experiencia práctica:</strong> Trabajar en ventas, atención al cliente y dirigir un proyecto de negocio me mostró cómo las ideas se convierten en productos reales y cómo las decisiones diarias afectan a un negocio.',
+        'work.li2': '<strong>Resolver por mi cuenta:</strong> Los problemas del mundo real no vienen con un manual de instrucciones. Aprendí a hacer preguntas, cambiar de plan y resolver problemas por mi cuenta en lugar de esperar indicaciones.',
+        'work.li3': '<strong>Mi meta:</strong> No quiero solo memorizar cosas de un libro de texto. Quiero entenderlas de verdad, usarlas y hacer que pasen cosas buenas.',
+        'work.button': 'Explora mi experiencia laboral',
+        'ind.label': '04 · Independencia y habilidades para la vida',
+        'ind.title': 'Asume la responsabilidad. Construye tu autonomía.',
+        'ind.lead': 'Ser independiente significa saber manejar tus asuntos y arreglar las cosas cuando algo sale mal.',
+        'ind.li1': '<strong>Habilidades prácticas:</strong> He estado aprendiendo por mi cuenta habilidades cotidianas como cocinar, cuidar el jardín, hacer reparaciones básicas en casa y hacer instalaciones eléctricas sencillas.',
+        'ind.li2': '<strong>Resolver problemas:</strong> Hacer tareas básicas del hogar te enseña a diagnosticar fallas, aprovechar lo que tienes y cuidarte de forma segura.',
+        'ind.li3': '<strong>Prepararme:</strong> Adquirir estos hábitos me está ayudando a prepararme para vivir solo, adaptarme a la universidad y valerme por mí mismo.',
+        'ind.button': 'Explora mi camino hacia la independencia',
+        'res.label': 'Currículum',
+        'res.download': 'Descargar currículum (.docx)',
+        'edu.h3': 'Educación',
+        'edu.h4a': 'American Cooperative School (ACS), La Paz, Bolivia <span>ago 2023 – jun 2027 (previsto)</span>',
+        'edu.li1': 'Diploma: Diploma de bachillerato de Estados Unidos y Bolivia',
+        'edu.li2': 'Promedio acumulado sin ponderar: 2.90 | Premio: American Citizenship Award',
+        'edu.li3': 'Materias: AP Seminar, AP Research, AP World History, AP Microeconomics, AP Spanish Language, AP Spanish Literature',
+        'edu.h4b': 'Forman School Summer Program, Connecticut, EE. UU. <span>jul 2025</span>',
+        'edu.li4': 'Completé un programa académico de cuatro semanas junto a estudiantes de orígenes diversos, fortaleciendo mi independencia, comunicación y conciencia cultural mientras conocía nuevos métodos de enseñanza y la cultura estadounidense.',
+        'act.h3': 'Deportes y actividades',
+        'act.soccerH4': 'Club de Tenis La Paz – Fútbol | Titular <span>2017 – presente</span>',
+        'act.soccerLi1': 'Avancé por las divisiones juveniles hasta el equipo principal, entrenando unas 25 horas por semana; logré el ascenso de la 4.ª División a Primera A (2.ª División).',
+        'act.soccerLi2': 'Reconocimientos: 2× Campeón Estatal de La Paz (U17); 1× Campeón Estatal de La Paz (U19); ascenso a Primera A',
+        'act.varsityH4': 'ACS Varsity Fútbol | Capitán <span>ago 2023 – presente</span>',
+        'act.varsityLi1': 'Titular en varsity desde noveno grado y un aporte clave en ataque y defensa en competencias locales e internacionales.',
+        'act.varsityLi2': 'Reconocimientos: 2× Campeón de los Juegos de la Amistad; 1× Campeón de la Cougar Cup; 2× Subcampeón de la Cougar Cup; Subcampeón de la Copa Nissan; Subcampeón del Torneo UPB',
+        'act.bbH4': 'ACS Varsity Básquetbol | Jugador <span>ago 2023 – presente</span>',
+        'act.bbLi1': 'Jugador de rotación habitual y aporte defensivo clave en torneos escolares regionales.',
+        'act.bbLi2': 'Reconocimientos: 2× Campeón de la Cougar Cup; Subcampeón de los Juegos de la Amistad; Tercer lugar en los Juegos de la Amistad',
+        'act.academyH4': 'Club de Tenis La Paz – Básquetbol de academia | U15 y U17 <span>ago 2023 – presente</span>',
+        'act.academyLi1': 'Competí en las categorías U15 y U17 frente a rivales regionales de alto nivel, desarrollando trabajo en equipo, disciplina y versatilidad.',
+        'act.golfH4': 'Club de Golf La Paz | Miembro del equipo <span>ago 2023 – presente</span>',
+        'act.golfLi1': 'Competí en torneos juveniles de golf. Reconocimientos: Campeón del torneo del club (noveno grado).',
+        'act.upslH4': 'Competencia de fútbol UPSL | Miembro del equipo <span>jun 2026 – presente</span>',
+        'act.upslLi1': 'Compito en ligas de la UPSL frente a rivales de alto nivel, ganando experiencia internacional y capacidad de adaptación.',
+        'act.tequilasH4': 'Team Tequilas, Club de Tenis La Paz | Capitán del equipo <span>sep 2024 – presente</span>',
+        'act.tequilasLi1': 'Capitán de un equipo de fútbol multigeneracional; obtuvo el 1.er lugar tras avanzar por varias rondas de competencia.',
+        'svcb.h3': 'Liderazgo y servicio comunitario',
+        'svcb.englishH4': 'English Classes for Golf Teachers | Fundador <span>jul 2025 – presente</span>',
+        'svcb.englishLi1': 'Fundé y enseño un programa de inglés básico que ayuda a instructores de golf a comunicarse con miembros internacionales del club.',
+        'svcb.osH4': 'Operation Smile | Miembro y voluntario <span>2024 – presente</span>',
+        'svcb.osLi1': 'Recaudo fondos para niños que reciben cirugías de labio y paladar hendido; apoyo carreras benéficas, venta de boletos y la carrera de 5K “Kilómetros por Sonrisas”, que recaudó hasta $7,000 para 15 niños.',
+        'svcb.adipH4': 'A Day in the Park | Voluntario <span>2024 – presente</span>',
+        'svcb.adipLi1': 'Participo en encuentros mensuales que brindan tiempo de calidad y apoyo a niños y familias afectados por la pobreza, el abandono y el consumo de sustancias.',
+        'svcb.soH4': 'Special Olympics | Voluntario <span>oct 2026</span>',
+        'svcb.soLi1': 'Participé en actividades de voluntariado de apoyo a los atletas de Special Olympics.',
+        'svcb.coachH4': 'Entrenador de deportes juveniles | Voluntario comunitario <span>abr 2025</span>',
+        'svcb.coachLi1': 'Entrené a unos 10 niños pequeños en fútbol, básquetbol y otros deportes, con énfasis en trabajo en equipo, disciplina, deportividad, confianza y hábitos de vida saludables.',
+        'svcb.digitalH4': 'Instructor de alfabetización digital | Voluntario comunitario <span>mar 2025</span>',
+        'svcb.digitalLi1': 'Enseñé a adultos mayores a usar computadoras, celulares, correo electrónico y redes sociales, incluyendo seguridad en internet y comunicación en línea.',
+        'wk.h3': 'Experiencia laboral',
+        'wk.juiceH4': 'Negocio familiar de jugos | Asistente <span>ene 2026 – presente</span>',
+        'wk.juiceLi1': 'Trabajo junto a mi padre elaborando jugos de limón frescos y bebidas embotelladas: preparo ingredientes, desinfecto equipos, embotello, etiqueto, administro inventario, empaco pedidos y atiendo a clientes.',
+        'wk.juiceLi2': 'Ayudé a incorporar una planta especial de otro país que se usa en las limonadas.',
+        'wk.salteH4': 'Super Salteñas | Empleado de tienda <span>dic 2024 – presente</span>',
+        'wk.salteLi1': 'Atiendo a más de 30 clientes al día: tomo pedidos, manejo efectivo y pagos electrónicos, apoyo la preparación de alimentos, reabastezco inventario y resuelvo inquietudes de clientes de forma profesional.',
+        'wk.cerveH4': 'Compañía Cervecera Boliviana | Operario de producción <span>sep 2025 – dic 2025</span>',
+        'wk.cerveLi1': 'Apoyé la producción y el empaque diarios en una planta de ritmo acelerado, incluyendo preparación de bebidas, embotellado, etiquetado, control de calidad y procedimientos de seguridad; contribuí a miles de unidades producidas bajo estrictos estándares de calidad.',
+        'wk.bevH4': 'Producción y ventas de bebidas | Asistente de producción y ventas <span>sep 2025 – dic 2025</span>',
+        'wk.bevLi1': 'Preparé bebidas para distribución comercial, promocioné productos a clientes, mantuve exhibidores y respondí preguntas, desarrollando habilidades de ventas, comunicación y liderazgo.',
+        'wk.textH4': 'Textilon | Pasante <span>jun 2025</span>',
+        'wk.textLi1': 'Realicé una pasantía en una de las empresas textiles más grandes de La Paz, apoyando en inventario, tareas administrativas, logística, distribución y atención al cliente, mientras aprendía profesionalismo laboral y trabajo en equipo.',
+        'wk.cookieH4': 'Proyecto de emprendimiento escolar – Negocio de galletas | Cofundador <span>mar 2025 – may 2025</span>',
+        'wk.cookieLi1': 'Cofundé un negocio de galletas dirigido por estudiantes que abarcó horneado, empaque, marketing, precios, ventas y atención al cliente; registré costos e ingresos y generé una ganancia de más de Bs. 300.',
+        'sk.h3': 'Habilidades e idiomas',
+        'sk.langH4': 'Idiomas',
+        'sk.langLi1': 'Español (fluido), inglés (fluido), italiano (básico)',
+        'sk.skillsH4': 'Habilidades',
+        'sk.skillsLi1': 'Cocina y seguridad alimentaria, organización de cocina, trabajo eléctrico básico y mantenimiento, reparaciones mecánicas, jardinería y paisajismo, mantenimiento del hogar, administración de inventario, atención al cliente',
+        'close.label': 'Declaración final',
+        'close.title': 'Listo para lo que sigue',
+        'close.lead': 'Todo lo que he hecho hasta ahora me ha enseñado disciplina, responsabilidad y a trabajar con otros.',
+        'close.p': 'Estoy muy emocionado por la universidad. No puedo esperar para tomar cursos difíciles, unirme a proyectos del campus y aprender de personas que ven el mundo de manera distinta a mí. Sé que todavía tengo mucho por aprender y mucho que demostrar, pero estoy listo para trabajar duro y hacer que este próximo capítulo cuente.',
+        'close.line': 'El próximo capítulo es mío por construir.'
+      };
+
+      const root = document.documentElement;
+      const buttons = document.querySelectorAll('.lang-btn');
+      const translated = document.querySelectorAll('[data-i18n]');
+      const alts = document.querySelectorAll('[data-i18n-alt]');
+      const description = document.querySelector('meta[name="description"]');
+      const original = {
+        title: document.title,
+        description: description.content,
+        text: new Map([...translated].map((el) => [el, el.innerHTML])),
+        alt: new Map([...alts].map((el) => [el, el.alt]))
+      };
+
+      const setLanguage = (lang) => {
+        const es = lang === 'es';
+        root.lang = lang;
+        document.title = es ? copy['meta.title'] : original.title;
+        description.content = es ? copy['meta.description'] : original.description;
+        translated.forEach((el) => {
+          el.innerHTML = es ? copy[el.dataset.i18n] : original.text.get(el);
+        });
+        alts.forEach((el) => {
+          el.alt = es ? copy[el.dataset.i18nAlt] : original.alt.get(el);
+        });
+        buttons.forEach((btn) => {
+          btn.setAttribute('aria-pressed', String(btn.dataset.lang === lang));
+        });
+      };
+
+      buttons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          setLanguage(btn.dataset.lang);
+          try {
+            localStorage.setItem('lang', btn.dataset.lang);
+          } catch (error) {
+            // Storage is unavailable; the choice just won't persist.
+          }
+        });
+      });
+
+      let saved = null;
+      try {
+        saved = localStorage.getItem('lang');
+      } catch (error) {
+        // Storage is unavailable; start in English.
+      }
+      if (saved === 'es') {
+        setLanguage('es');
+      }
+    })();
+  </script>
 
 </body>
 </html>
